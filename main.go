@@ -11,7 +11,7 @@ import (
 	"github.com/PaulSonOfLars/gotgbot/v2"
 )
 
-const GIGA_FEED_CHAT_ID = -1001799797732
+const GIGA_FEED_CHAT_ID = -1001918876841
 
 func main() {
 	b, err := gotgbot.NewBot(BOT_TOKEN, &gotgbot.BotOpts{})
@@ -68,7 +68,7 @@ func processUpdate(bot *gotgbot.Bot) func(w http.ResponseWriter, r *http.Request
 }
 
 const PUSH_TEMPL = `
-<b><u><a href="github.com/gigauserbot">THE GIGA PROJECT</a></u></b>
+<b><u><a href="github.com/botlance">BotLance</a></u></b>
 
 <b><u>New Push</u></b>
 <b>Repository</b>: <code>%s</code>
@@ -78,7 +78,7 @@ const PUSH_TEMPL = `
 <b>Pusher's Email</b>: %s`
 
 const ISSUE_TEMPL = `
-<b><u><a href="github.com/gigauserbot">THE GIGA PROJECT</a></u></b>
+<b><u><a href="github.com/botlance">BotLance</a></u></b>
 
 <b><u>New Issue Update</u></b>
 <b>Repository</b>: <code>%s</code>
@@ -88,7 +88,7 @@ const ISSUE_TEMPL = `
 `
 
 const PR_TEMPL = `
-<b><u><a href="github.com/gigauserbot">THE GIGA PROJECT</a></u></b>
+<b><u><a href="github.com/botlance">BotLance</a></u></b>
 
 <b><u>New PR Update</u></b>
 <b>Repository</b>: <code>%s</code>
@@ -98,7 +98,7 @@ const PR_TEMPL = `
 `
 
 const DISC_TEMPL = `
-<b><u><a href="github.com/gigauserbot">THE GIGA PROJECT</a></u></b>
+<b><u><a href="github.com/botlance">BotLance</a></u></b>
 
 <b><u>New Discussion Update</u></b>
 <b>Repository</b>: <code>%s</code>
@@ -108,7 +108,7 @@ const DISC_TEMPL = `
 `
 
 const COMNT_TEMPL = `
-<b><u><a href="github.com/gigauserbot">THE GIGA PROJECT</a></u></b>
+<b><u><a href="github.com/botlance">BotLance</a></u></b>
 
 <b><u>New Comment Update</u></b>
 <b>Repository</b>: <code>%s</code>
@@ -119,7 +119,7 @@ const COMNT_TEMPL = `
 `
 
 const REPO_TEMPL = `
-<b><u><a href="github.com/gigauserbot">THE GIGA PROJECT</a></u></b>
+<b><u><a href="github.com/botlance">BotLance</a></u></b>
 
 <b><u>New Repository Update</u></b>
 <b>Repository</b>: <code>%s</code>
